@@ -7,6 +7,9 @@
 For the **Restaurant Reviews** projects, I incrementally converted a static webpage to a mobile-ready web application. I took a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. I also added a service worker to begin the process of creating a seamless offline experience for my users.
 
 
+![Illustration](./restaurants.png)
+
+
 ### Specification
 
 I was provided with the code for a restaurant reviews website. This code had a lot of issues. It was barely usable on a desktop browser, much less a mobile device. It also didn’t include any standard accessibility features, and it didn't work offline at all. My job was to update the code to resolve these issues while still maintaining the included functionality.
