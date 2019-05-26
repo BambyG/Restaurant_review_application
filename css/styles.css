@@ -47,6 +47,10 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -108,7 +112,6 @@ nav h1 a {
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-  width: 100%;
   height: 100px;
   background-color: #3397DB;
   align-items: center;
@@ -165,7 +168,7 @@ nav h1 a {
   width: 270px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 680px) {
   #restaurants-list li  {
     width: 100% !important;
   }
@@ -229,8 +232,8 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
-  width: 50%;
+  position: fixed;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -297,4 +300,75 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+
+@media screen and (max-width: 1015px) {
+  #maincontent {
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+
+/* ====================== Responsive media queries ====================== */
+
+@media only screen and (max-width: 750px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }  
+
+ #restaurant-cuisine {
+
+    width: 100%;
+}
+  
+  
+  .inside {
+    display: flex;
+    flex-direction: row;
+    width: 100vw
+  }
+
+   header #breadcrumb {
+      width: 100vw;
+      padding-right: 0;
+      padding-left: 0;
+      text-align: center;
+    }
+
+  .inside #map-container {
+    top: 130px;
+    position: relative;
+    height: 300px;
+    width: 100vw;
+  }
+
+  .inside #restaurant-container {
+    position: relative;
+    width: 100vw;
+    padding: 140px 5px 0 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .inside #reviews-container {
+    width: 100vw;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .inside #footer {
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+  }
+
+  #reviews-container h2 {
+    text-align: center;
+  }
+
 }
